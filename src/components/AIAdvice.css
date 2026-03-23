@@ -1,0 +1,139 @@
+.ai-container {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.ai-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+.ai-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: #EEEDFE;
+  color: #534AB7;
+}
+
+.ai-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ai-btn:hover {
+  background: #4338CA;
+}
+
+.ai-btn:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.ai-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  color: #888;
+  font-size: 13px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e0e0e0;
+  border-top-color: #4F46E5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.ai-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.suggestion-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  background: #f8f7ff;
+  border-radius: 8px;
+  border-left: 3px solid #4F46E5;
+}
+
+.suggestion-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #4F46E5;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.suggestion-text {
+  font-size: 13px;
+  color: #1e1e1e;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.ai-error {
+  font-size: 13px;
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.ai-refresh {
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  color: #4F46E5;
+  border: 1px solid #4F46E5;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.ai-refresh:hover {
+  background: #f0f0ff;
+}
